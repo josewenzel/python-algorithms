@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "grokking algorithms book's algorithms"
 authors = ["Jose Wenzel <devwenzel@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "python_algorithms" }]
+packages = [
+    { include = "algorithms" },
+    { include = "__tests__" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
